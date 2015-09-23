@@ -1,0 +1,15 @@
+paper-material {
+    width: 75%;
+    padding: 15px;
+}
+
+paper-dialog {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    bottom: 25%;
+    right: 25%;
+    margin: 0px;
+//width: 1500px;
+//height: 1000px;
+}

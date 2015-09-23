@@ -1,0 +1,21 @@
+{
+  "name": "Hello App Engine",
+  "version": "0.0.0",
+  "homepage": "https://github.com/LuisEvilCo/Hello_App_Engine",
+  "authors": [
+    "Luis Tinajero Muñozcano <ltm150895@gmail.com>"
+  ],
+  "main": "index.jsp",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gold-elements": "PolymerElements/gold-elements#~1.0.1",
+    "polymer": "Polymer/polymer#1.1.0"
+  }
+}
