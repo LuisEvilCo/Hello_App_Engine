@@ -8,21 +8,38 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title></title>
+    <title>Hello App Engine</title>
+
+    <script type="text/javascript">
+      var timer = null;
+
+      function start(){
+        /*var time = new Date();
+        var hours = time.getHours();
+        var minutes = time.getMinutes();
+        minutes=((minutes < 10) ? "0" : "") + minutes;
+        var seconds = time.getSeconds();
+        seconds=((seconds < 10) ? "0" : "") + seconds;
+        var display = = hours + ":" + minutes + ":" + seconds;*/
+        document.forms[0].display.value = new Date();
+        timer = setTimeout("start()",1000)
+      }
+    </script>
   </head>
-  <body>
+  <body onload="start()">
   <%
     java.util.Date now = new java.util.Date();
-    String since ="Sitio online desde : Wed Sep 23 03:43:39 UTC 2015";
-    String hello = "Luis manda saludos a todos. ";
+    String since ="Sitio online desde : Wed Sep 23 03:43:39 UTC 2015\n";
+    String hello = "Luis manda saludos a todos. \n";
   %>
   <%=
   hello
   %>
-  <p align="left"><%=
-    "Fecha actual = " + now
-    %>
-  </p>
+  <br/>
+  <form>
+    <input type="text" name="display" size="100" style="border: none; background: transparent;" readonly title="input"/>
+  </form>
+
 
   <p align="right"><%=
   since
