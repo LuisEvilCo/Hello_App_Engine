@@ -35,9 +35,10 @@
   <%=
   hello
   %>
-  <br/>
   <form>
+    <p>
     <input type="text" name="display" size="100" style="border: none; background: transparent;" readonly title="input"/>
+    </p>
   </form>
 
 
